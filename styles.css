@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-form {
+    max-width: 800px; /* Wider background */
+    max-height: 700px; /* Increased height */
+    padding: 30px; /* Increased padding for a spacious feel */
+    background-color: #e0f7f9; /* Soft cyan background */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    text-align: left; /* Left-align content */
+    transition: transform 0.3s ease; /* Smooth animation with transform */
+}
+h1 {
+    font-size: 42px; /* Larger font size */
+    margin-bottom: 25px;
+    color: #008080; /* Teal color for the header */
+    text-align: center;
+}
+
+label {
+    font-size: 20px; /* Larger font size for labels */
+    font-weight: bold; /* Bold text */
+    color: #008080; /* Teal color for labels */
+    display: block;
+    margin-bottom: 10px; /* Space between label and input */
+}
+
+input, textarea {
+    width: 500px;
+    padding: 14px; /* Increased padding for larger input fields */
+    margin-bottom: 25px;
+    border: 1px solid #80d8d8; /* Light cyan border */
+    border-radius: 50px; /* Oval shape */
+    background-color: #fff;
+    font-size: 18px; /* Larger font size for input text */
+    color: #333;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+input:focus, textarea:focus {
+    border-color: #008080; /* Teal on focus */
+    outline: none;
+}
+
+button {
+    background-color: #008080; /* Teal submit button */
+    color: #fff;
+    padding: 14px 25px; /* Larger button */
+    border: none;
+    border-radius: 50px; /* Oval shape */
+    cursor: pointer;
+    font-size: 18px; /* Larger font size for the button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f5f; /* Darker teal on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Additional decorative elements */
+.contact-form::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(135deg, #008080 0%, #80d8d8 100%); /* Teal to cyan gradient border */
+    z-index: -1;
+    border-radius: 16px;
+}
+
+.contact-form {
+    position: relative;
+}
